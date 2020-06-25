@@ -1,5 +1,7 @@
 // firebase.js
 import firebase from 'firebase/app';
+import "firebase/auth";
+import 'firebase/database';
 
 // initialize firebase
 // config object
@@ -13,8 +15,12 @@ var firebaseConfig = {
   appId: "1:998621565378:web:85e7f57765cec8de40065b"
 };
 
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
+
 // exports the configured version of firebase
 export default firebase;
+export const auth = firebase.auth();
+export const provider = new firebase.auth.GoogleAuthProvider();
