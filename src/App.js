@@ -3,8 +3,6 @@ import firebase, { auth, provider } from './firebase';
 import './App.css';
 
 
-
-
 class App extends Component {
   constructor() {
     super();
@@ -58,7 +56,7 @@ class App extends Component {
   }
   //
 
-  
+
   render() {
     return (
       <div className="App">
